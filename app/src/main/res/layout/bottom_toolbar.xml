@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="70dp">
+
+    <Button
+        android:id="@+id/btn_chats"
+        style="@style/Bottom_ActionBarItem"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:drawableTop="@drawable/chat_colored_icon"
+        android:text="@string/chats"
+        app:layout_constraintWidth_percent="0.3333" />
+
+
+    <Button
+        android:id="@+id/btn_groups"
+        style="@style/Bottom_ActionBarItem"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:drawableTop="@drawable/group_uncolored_icon"
+        android:gravity="center_horizontal|bottom"
+        android:text="@string/groups"
+        app:layout_constraintStart_toEndOf="@id/btn_chats"
+        app:layout_constraintWidth_percent="0.3333" />
+
+
+    <Button
+        android:id="@+id/btn_more"
+        style="@style/Bottom_ActionBarItem"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:drawableTop="@drawable/more_uncolored_icon"
+        android:gravity="center_horizontal|bottom"
+        android:text="@string/more"
+        app:layout_constraintStart_toEndOf="@id/btn_groups"
+        app:layout_constraintWidth_percent="0.3333" />
+
+</android.support.constraint.ConstraintLayout>

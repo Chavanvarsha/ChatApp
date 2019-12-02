@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">@color/blue</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="blue">#2998ff</color>
+    <color name="light_blue">#2A7FFF</color>
+    <color name="white">#ffffff</color>
+    <color name="grey">#c7c7c9</color>
+    <color name="dark_grey">#8e8e92</color>
+    <color name="white_shade">#FAFAFA</color>
+    <color name="black">#000000</color>
+    <color name="black_shade_text">#1D1D26</color>
+    <color name="received_bubble_color">#E6e9ed</color>
+    <color name="light_grey">#f2f2f2</color>
+</resources>

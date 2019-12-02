@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="8dp">
+
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="hello 23 october"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:visibility="visible"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/rounded_corners"/>
+
+    <ImageView
+        app:layout_constraintTop_toBottomOf="@id/tv_date"
+        android:id="@+id/image_message_profile"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/text_message_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="4dp"
+        android:textSize="10sp"
+        app:layout_constraintLeft_toRightOf="@+id/image_message_profile"
+        app:layout_constraintTop_toBottomOf="@id/tv_date" />
+
+    <TextView
+        android:id="@+id/text_message_body"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:background="@drawable/chat_bubble"
+        android:maxWidth="240dp"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:text="Welcome"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toRightOf="@+id/image_message_profile"
+        app:layout_constraintTop_toBottomOf="@+id/text_message_name" />
+
+    <TextView
+        android:id="@+id/text_message_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/text_message_body"
+        app:layout_constraintLeft_toRightOf="@+id/text_message_body" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_grey"
+    tools:context=".UI.Activity.ChatScreenActivity">
+
+    <include
+        android:id="@+id/appbar"
+        layout="@layout/chat_screen_toolbar"
+        android:visibility="visible"></include>
+
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?android:attr/actionBarSize"
+        app:layout_constraintTop_toBottomOf="@id/appbar"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_chat"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="?android:attr/actionBarSize"
+            android:clipToPadding="false"
+            android:paddingBottom="4dp"
+            android:scrollbars="vertical"
+            app:layout_constraintTop_toTopOf="parent"></android.support.v7.widget.RecyclerView>
+
+     <!--   <android.support.constraint.ConstraintLayout
+            android:id="@+id/typing"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/recycler_chat"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.88">
+
+            <TextView
+                android:id="@+id/tv_typing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="someone is typing"
+                android:visibility="gone" />
+        </android.support.constraint.ConstraintLayout>-->
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/layout_chat_chatbox"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:padding="2dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/recycler_chat"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.991">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/rounded_corners"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_addfiles"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:background="@drawable/rounded_corners"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="+"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/edittext_chat"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:hint="Enter message"
+                    android:maxLines="6" />
+
+                <Button
+                    android:id="@+id/button_chat_send"
+                    android:layout_width="70dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/rounded_corners"
+                    android:text="Send"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                    android:textSize="15sp"
+
+                    />
+            </LinearLayout>
+        </android.support.constraint.ConstraintLayout>
+
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

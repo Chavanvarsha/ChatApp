@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">ChatApp</string>
+
+    <string name="registration_successful">Registration Successful</string>
+    <string name="user_already_exit">User Already Exit</string>
+    <string name="invalid_username_or_password">Invalid email_id Or Password</string>
+    <string name="login_successful">Login Succesful</string>
+    <string name="cant_connect_to_server">Cant connect to Server</string>
+    <string name="don_t_have_an_acccount">Don\'t have an account ?</string>
+    <string name="register">register</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="log_in">Log in</string>
+    <string name="email_id">Email Id</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="login">Login</string>
+    <string name="already_have_an_account">Already have an account ?</string>
+    <string name="enter_email_and_password">Please enter email_id and password</string>
+    <string name="enter_emailid">Please enter email id</string>
+    <string name="enter_password">Please enter password</string>
+    <string name="enter_confirmpassword">Please enter confirm password</string>
+    <string name="password_not_match">Password do not match</string>
+    <string name="enter_all_fields">Please enter all the fields</string>
+    <string name="email_not_valid">Email_id is not in valid format</string>
+    <string name="more">More</string>
+    <string name="chats">Chats</string>
+    <string name="groups">Groups</string>
+    <string name="online">Online</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="logout">Logout</string>
+    <string name="no_internet_connection">No Internet Connection</string>
+    <string name="title_activity_create_group">CreateGroupActivity</string>
+    <string name="adduser">Add Users</string>
+    <string name="creategroup">Create Group</string>
+    <string name="group_name">Group Name</string>
+    <string name="create">Create</string>
+    <string name="cancel">Cancel</string>
+    <string name="enter_group_name">enter group name</string>
+    <string name="atleast_3_members">Group should contains at least 3 people</string>
+    <string name="startchat">Start Chatting</string>
+    <string name="lastseen">last seen at</string>
+    <string name="lastseen_today">last seen today at</string>
+    <string name="lastseen_yesterday">last seen yesterday at</string>
+    <string name="status_message">Status Message</string>
+    <string name="save">Save</string>
+    <string name="enterstatus">Enter Status</string>
+    <string name="enter_username">Enter Username</string>
+    <string name="usernameupdated">Username Updated Successfull</string>
+    <string name="username_length">Length of username should be greater than 4</string>
+    <string name="status_updated">Status Updated</string>
+    <string name="entergroupdiscription">enter group discription</string>
+    <string name="send_message_error">Connection should be made before sending any message</string>
+    <string name="change_profile_pic">Change Profile Pic</string>
+    <string name="group_description">Group Description</string>
+    <string name="enterDiscription">Enter Discription</string>
+    <string name="someerror">Some Error</string>
+    <string name="add_participants">Add Participants</string>
+    <string name="transition_image">transition_image</string>
+</resources>

@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.Activity.Registration_loginActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/layout_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:descendantFocusability="beforeDescendants"
+                    android:focusableInTouchMode="true"
+                    android:padding="30dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHeight_percent="0.45"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.60">
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/username"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:longClickable="false"
+                        app:hintAnimationEnabled="true"
+                        app:hintEnabled="true"
+                        app:hintTextAppearance="@style/CounterText">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/et_username"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/email_id"
+                            android:longClickable="false"
+                            android:singleLine="true"
+                            android:textColorHint="@color/dark_grey" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:focusableInTouchMode="true"
+                        android:longClickable="false"
+                        app:hintAnimationEnabled="true"
+                        app:hintEnabled="true"
+                        app:hintTextAppearance="@style/CounterText"
+                        app:layout_constraintTop_toBottomOf="@id/username">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/et_password"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/password"
+                            android:inputType="textPassword"
+                            android:longClickable="false"
+                            android:maxLength="20"
+                            android:singleLine="true"
+                            android:textColorHint="@color/dark_grey" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <FrameLayout
+                        android:id="@+id/rememberme"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        app:layout_constraintTop_toBottomOf="@id/password">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:clickable="false"
+                            android:cursorVisible="false"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:hint="Remember me"
+                            android:longClickable="false"
+                            app:layout_constraintTop_toBottomOf="@id/password" />
+
+                        <Switch
+                            android:id="@+id/switch_remember_me"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end|center"
+                            android:paddingEnd="10dp"
+                            android:thumb="@drawable/round_thumb"
+                            android:track="@drawable/round_track" />
+                    </FrameLayout>
+
+                    <ProgressBar
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:indeterminateTint="@color/blue"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/rememberme" />
+
+                    <Button
+                        android:id="@+id/btn_login"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/button_rounded_shape"
+                        android:text="@string/log_in"
+                        android:textColor="@color/white"
+                        app:layout_constraintTop_toBottomOf="@id/rememberme" />
+
+
+                </android.support.constraint.ConstraintLayout>
+
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/layout_register"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:descendantFocusability="beforeDescendants"
+                    android:focusableInTouchMode="true"
+                    android:padding="30dp"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHeight_percent="0.45"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.60">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/registerusername"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:longClickable="false"
+                        app:hintAnimationEnabled="true"
+                        app:hintEnabled="true"
+                        app:hintTextAppearance="@style/CounterText">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/et_registerusername"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/email_id"
+                            android:longClickable="false"
+                            android:singleLine="true"
+                            android:textColorHint="@color/dark_grey" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/registerpassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:longClickable="false"
+                        app:hintAnimationEnabled="true"
+                        app:hintEnabled="true"
+                        app:hintTextAppearance="@style/CounterText"
+                        app:layout_constraintTop_toBottomOf="@id/registerusername">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/et_registerpassword"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/password"
+                            android:inputType="textPassword"
+                            android:longClickable="false"
+                            android:maxLength="20"
+                            android:singleLine="true"
+                            android:textColorHint="@color/dark_grey" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/registerConfirmPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:longClickable="false"
+                        android:singleLine="true"
+                        app:hintAnimationEnabled="true"
+                        app:hintEnabled="true"
+                        app:hintTextAppearance="@style/CounterText"
+                        app:layout_constraintTop_toBottomOf="@id/registerpassword">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/et_registerConfirmPassword"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/confirm_password"
+                            android:inputType="textPassword"
+                            android:longClickable="false"
+                            android:maxLength="20"
+                            android:textColorHint="@color/dark_grey" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <ProgressBar
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="15dp"
+                        android:indeterminateTint="@color/blue"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/registerConfirmPassword" />
+
+                    <Button
+                        android:id="@+id/btn_register"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/button_rounded_shape"
+                        android:text="Register"
+                        android:textColor="@color/white"
+                        app:layout_constraintTop_toBottomOf="@id/registerConfirmPassword" />
+
+                </android.support.constraint.ConstraintLayout>
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/layout"
+                app:layout_constraintVertical_bias="0.95">
+
+
+                <TextView
+                    android:id="@+id/tv_prefix"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/don_t_have_an_acccount"
+                    android:textAllCaps="true"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_register"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:clickable="true"
+                    android:fontFamily="sans-serif"
+                    android:text="@string/register"
+                    android:textAllCaps="true"
+                    android:textColor="@color/blue"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/tv_prefix" />
+            </android.support.constraint.ConstraintLayout>
+        </android.support.constraint.ConstraintLayout>
+
+
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>

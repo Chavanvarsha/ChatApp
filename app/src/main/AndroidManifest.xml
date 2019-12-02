@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.chatapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+
+    <application
+        android:name=".Scope.BaseApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/chat_colored_icon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@drawable/chat_colored_icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="net.hockeyapp.android.appIdentifier"
+            android:value="${HOCKEYAPP_APP_ID}" />
+
+        <activity
+            android:name=".UI.Activity.SplashActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".UI.Activity.MainActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity android:name=".UI.Activity.Registration_loginActivity" />
+        <activity
+            android:name=".UI.Activity.ChatScreenActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".UI.Activity.CreateUserListActivity"
+            android:label="@string/title_activity_create_group"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".UI.Activity.EditActivity" />
+
+        <service android:name=".services.ChannelRefreshService" />
+        <service
+        android:name=".fcm.MyFirebaseMessagingService"
+        android:stopWithTask="false">
+        <intent-filter>
+            <action android:name="com.google.firebase.MESSAGING_EVENT" />
+        </intent-filter>
+    </service>
+        <service android:name=".service.DownloadService" />
+
+        <activity android:name=".UI.Activity.InitializingActivity" />
+        <activity android:name=".UI.Activity.GroupInfoActivity" />
+        <activity android:name=".UI.Activity.MultipleImageViewerActivity"></activity>
+    </application>
+
+</manifest>
