@@ -33,7 +33,7 @@ public class EditActivity extends BaseActivity implements View.OnClickListener {
         type = getIntent().getIntExtra(StringConstants.TYPE, 0);
         ACTIVITY_TYPE = getIntent().getIntExtra(StringConstants.ACTIVITY_TYPE, 0);
         setContentView(R.layout.activity_edit);
-
+//Edit
         cancel = findViewById(R.id.btn_cancel);
         save = findViewById(R.id.btn_save);
         data = findViewById(R.id.et_message);
