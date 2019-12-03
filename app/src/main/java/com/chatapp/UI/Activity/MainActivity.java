@@ -33,6 +33,7 @@ public class MainActivity extends BaseActivity implements IResponseCallback, Vie
         super.onCreate(savedInstanceState);
         startService(new Intent(this, ChannelRefreshService.class));
         setContentView(R.layout.activity_main);
+        //hi
         initializeView();
         checkPermissions();
     }
